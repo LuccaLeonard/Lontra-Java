@@ -10,15 +10,16 @@ public class SobreLontra {
     private String alimentacao;
     private String cor;
     private String curiosidade;
-    private String especie;
+    private String nome;
     private double tamanho;
     
+    //Construtor Vazio
     public SobreLontra () {
         
     }
     
-    public SobreLontra(String especie, String alimentacao, String cor, double tamanho, String curiosidade) {
-        this.especie = especie;
+    public SobreLontra(String nome, String alimentacao, String cor, double tamanho, String curiosidade) {
+        this.nome = nome;
         this.alimentacao = alimentacao;
         this.tamanho = tamanho;
         this.cor = cor;
@@ -59,12 +60,12 @@ public class SobreLontra {
         this.curiosidade = curiosidade;
     }
 
-    public String getEspecie() {
-        return especie;
+    public String getNome() {
+        return nome;
     }
 
-    public void setEspecie(String especie) {
-        this.especie = especie;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public double getTamanho() {
