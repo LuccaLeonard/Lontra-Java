@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany.luccaleonardoado1;
 
 /**
@@ -21,7 +17,7 @@ public class SobreLontra {
         
     }
     
-    public SobreLontra(String especie, String alimentacao, String cor, String curiosidade, double tamanho) {
+    public SobreLontra(String especie, String alimentacao, String cor, double tamanho, String curiosidade) {
         this.especie = especie;
         this.alimentacao = alimentacao;
         this.tamanho = tamanho;
@@ -29,6 +25,16 @@ public class SobreLontra {
         this.curiosidade = curiosidade;
     }
 
+    //Meu animal faz...
+    public void nadar() {
+        System.out.println("A lontra nada muito rápido!");
+    }
+    
+    public void reproducao(){
+        System.out.println("A maioria das vezes as lontras tem filhotes gêmeos!");
+    }
+    
+    //Getters and Setters
     public String getAlimentacao() {
         return alimentacao;
     }
@@ -67,8 +73,5 @@ public class SobreLontra {
 
     public void setTamanho(double tamanho) {
         this.tamanho = tamanho;
-    }
-    
-    
-    
+    }  
 }
